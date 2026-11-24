@@ -21,9 +21,14 @@ app.use(express.json());
 // URL은 한글을 원래 포함할 수 없기 때문에 변환을 하게 되는데, 그것을 한글로 받아들일 수 있게 하는 기능
 app.use(express.urlencoded({ extended: true }));
 
+
 // 이 앱에 Request가 들어올 때의 경로를 읽어서
 // 첫번째 매개변수의 값인 '/user'로 시작하면, 두번째 매개변수의 파일로 Routing시킴
 app.use("/user", userRouter);
+
+
+
+
 
 // ----------------- Express 구동 부 --------------------
 
