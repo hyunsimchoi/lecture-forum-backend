@@ -5,6 +5,7 @@
 // "prisma"라는 패키지는 schema.prisma를 가지고 셋업하는 일을 하는 패키지
 // "@prisma/client" 패키지는 express에서 prisma로 통신할 수 있게 해주는 패키지
 
+import "dotenv/config";
 import { PrismaMariaDb } from "@prisma/adapter-mariadb";
 import { PrismaClient } from "../generated/prisma/client.ts";
 

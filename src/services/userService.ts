@@ -30,7 +30,7 @@ const createUser = async (data: UserCreateInput) => {
 
     // prisma의 create 명령을 내리면
     // 그에 대한 결과는 "생성된" 데이터베이스 칼럼 정보가 도착됨
-    return await prisma.user.create({
+    return prisma.user.create({
         data,
     });
 };
